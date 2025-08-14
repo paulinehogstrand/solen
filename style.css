@@ -11,17 +11,19 @@ header {
   padding-top: 20px;
 }
 
-.solen-logo {
-  height: 650px;
-  width: auto;
-  display: block;
-  max-width: 100%;
-  color: #222; /* Default color */
-  transition: color 0.3s;
+.solen-header {
+  color: black; /* default sun color */
 }
 
-.solen-logo:hover {
-  color: #e63946; /* Hover color */
+.solen-header:hover {
+  color: orange; /* sun changes to this */
+}
+
+/* Responsive SVG scaling */
+.solen-logo {
+  width: 1000px;  /* adjust as needed */
+  height: auto;
+  display: block;
 }
 
 html, body {
