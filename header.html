@@ -27,8 +27,8 @@
         fill: currentColor;
         stroke: currentColor;
         stroke-width: 1px;
-        pointer-events: auto;
-        transition: none; /* no fade */
+        pointer-events: visiblePainted; /* limit hover to painted area */
+        transition: none; /* instant change */
       }
       .main-shape:hover {
         color: orange;
