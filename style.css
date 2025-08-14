@@ -1,0 +1,57 @@
+#header {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.solen-logo {
+  height: 650px;
+  width: auto;
+  display: block;
+  max-width: 100%;
+  color: #222; /* Default color */
+  transition: color 0.3s;
+}
+
+.solen-logo:hover {
+  color: #e63946; /* Hover color */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  padding: 0px 0;
+  background: #fff;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px 0;
+  color: #333;
+  font-size: small;
+}

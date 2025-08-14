@@ -6,13 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
     <title>solen</title>
-     <meta name="description" content="solen homepage">
+     <meta name="description" content="Solen is a Copenhagen based imprint.">
+     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
    
-<p>solen</p>
+     <div id="header"></div>
+    <main>
+       
+    </main>
+    <div id="footer"></div>
 
+ <script>
+      // Load header
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        });
+
+      // Load footer
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    </script>
 </body>
 
 </html>
