@@ -21,7 +21,7 @@ header {
 
 /* Responsive SVG scaling */
 .solen-logo {
-  width: 1000px;  /* adjust as needed */
+  width: 800px;  /* adjust as needed */
   height: auto;
   display: block;
 }
