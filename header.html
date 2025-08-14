@@ -1,7 +1,6 @@
 <header class="solen-header">
   <svg class="solen-logo" viewBox="0 0 4672 3025" xmlns="http://www.w3.org/2000/svg" aria-label="Solen logo" role="img">
     <style>
-      /* Pendulum & text stay fixed color, no hover reaction */
       .pendel-circle,
       .pendel-line,
       .solen-text {
@@ -24,16 +23,17 @@
         fill: #000;
       }
 
-      /* Sun shape — hover only works here */
       .main-shape {
         fill: currentColor;
         stroke: currentColor;
         stroke-width: 1px;
         pointer-events: auto;
+        transition: none; /* no fade */
       }
       .main-shape:hover {
-        color: orange; /* instant change */
+        color: orange;
       }
+
     </style>
 
     <g id="LOGO-BLACK" serif:id="LOGO BLACK">
