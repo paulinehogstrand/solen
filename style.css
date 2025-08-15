@@ -17,6 +17,11 @@ header {
   display: block;
 }
 
+
+.solen-logo a:hover text {
+  fill: #1600ff; /* your hover color */
+}
+
 /* Gradient fill link */
 .gradient-bg {
   fill: url(#animatedGradient);
