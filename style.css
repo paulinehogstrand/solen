@@ -11,37 +11,34 @@ header {
   padding-top: 20px;
 }
 
-.solen-header
-  body {
-	background: linear-gradient(-45deg, #0A3635, #1600ff, #ffb905, #fbc086);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
-.solen-header:hover {
-  color: orange; /* sun changes to this */
-}
-
-/* Responsive SVG scaling */
 .solen-logo {
-  width: 800px;  /* adjust as needed */
+  width: 200px; /* resize as needed */
   height: auto;
   display: block;
 }
+
+/* Gradient fill link */
+.gradient-bg {
+  fill: url(#animatedGradient);
+}
+
+/* Animate the gradient's stop colors */
+@keyframes gradientShift {
+  0%   { stop-color: #0A3635; }
+  25%  { stop-color: #1600ff; }
+  50%  { stop-color: #ffb905; }
+  75%  { stop-color: #fbc086; }
+  100% { stop-color: #0A3635; }
+}
+
+#gradStop1 {
+  animation: gradientShift 8s linear infinite;
+}
+#gradStop2 {
+  animation: gradientShift 8s linear infinite;
+  animation-delay: 2s;
+}
+
 
 html, body {
   height: 100%;

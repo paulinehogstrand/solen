@@ -1,52 +1,30 @@
 <header class="solen-header">
   <svg class="solen-logo" viewBox="0 0 4672 3025" xmlns="http://www.w3.org/2000/svg" aria-label="Solen logo" role="img">
-    <style>
-      .pendel-circle,
-      .pendel-line,
-      .solen-text {
-        pointer-events: none;
-      }
+    <defs>
+      <!-- Animated gradient definition -->
+      <linearGradient id="animatedGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop id="gradStop1" offset="0%" stop-color="#0A3635"/>
+        <stop id="gradStop2" offset="100%" stop-color="#fbc086"/>
+      </linearGradient>
+    </defs>
 
-      .pendel-circle {
-        fill: #070707;
-      }
-      .pendel-line {
-        fill: none;
-        stroke: #000;
-        stroke-width: 29.17px;
-      }
-      .solen-text {
-        font-family: 'Academico-BoldItalic','Academico',serif;
-        font-weight: 700;
-        font-style: italic;
-        font-size: 615.103px;
-        fill: #000;
-      }
-
-      .main-shape {
-        fill: currentColor;
-        stroke: currentColor;
-        stroke-width: 1px;
-        pointer-events: visiblePainted; /* limit hover to painted area */
-        transition: none; /* instant change */
-      }
-      .main-shape:hover {
-        color: orange;
-      }
-
-    </style>
-
-    <g id="LOGO-BLACK" serif:id="LOGO BLACK">
+    <g id="LOGO-BLACK">
       <g id="Pendel">
-        <ellipse class="pendel-circle" cx="1774.47" cy="1254.28" rx="292.458" ry="288.313" />
-        <path class="pendel-line" d="M1773.73,14.583l-2.223,1241.18" />
+        <ellipse class="pendel-circle" cx="1774.47" cy="1254.28" rx="292.458" ry="288.313" fill="#070707"/>
+        <path class="pendel-line" d="M1773.73,14.583l-2.223,1241.18" fill="none" stroke="#000" stroke-width="29.17"/>
       </g>
 
-      <path class="main-shape"
+      <!-- Sun shape with gradient fill -->
+      <path class="gradient-bg"
         d="M1775.34,1878.2c46.48,-2.352 150.258,-11.682 250.996,-54.566c83.166,-35.404 162.437,-97.693 221.769,-162.393c68.629,-74.839 111.733,-170.33 132.729,-250.381c22.615,-86.222 20.394,-154.357 20.394,-154.357l1140.31,-2.224l-771.786,312.702l487.295,154.02l-589.052,67.153l467.53,600.897l-734.292,-289.649l70.011,669.949l-462.612,-499.915l-237.985,755.309l-239.041,-753.824l-469.443,500.375l76.887,-682.693l-731.547,298.964l467.531,-600.897l-589.053,-67.153l492.509,-153.022l-778.481,-309.992l1149.45,0c0,0 -3.801,216.289 126.447,371.589c43.904,52.349 90.827,103.221 147.308,141.4c111.348,75.267 243.908,114.185 352.134,108.708Z"
       />
     </g>
 
-    <text class="solen-text" x="2292.77px" y="1087.45">SOLEN</text>
+    <text class="solen-text" x="2292.77px" y="1087.45"
+      font-family="'Academico-BoldItalic','Academico',serif"
+      font-weight="700" font-style="italic"
+      font-size="615.103px" fill="#000">
+      SOLEN
+    </text>
   </svg>
 </header>
