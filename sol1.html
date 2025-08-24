@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press Release – Pauline Hogstrand</title>
+
+  <!-- Prevent indexing -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fbfbfb;
+      color: #220f01cb;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    header {
+      background: url('artwork.jpg') no-repeat center center/cover;
+      padding: 4rem 2rem;
+      position: relative;
+      text-align: center;
+      color: #020100;
+;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 600;
+      background: #fbfbfb;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 0.8rem;
+      background: #fbfbfb;
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 6px;
+    }
+    .header-downloads {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      display: flex;
+      gap: 1rem;
+    }
+    .download-menu {
+      position: relative;
+      display: inline-block;
+    }
+    .download-btn {
+      background: none;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: #000;
+    }
+    .download-btn:hover,
+    .download-btn:focus {
+      background: #f5f5f5;
+      outline: none;
+    }
+    .download-options {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 110%;
+      background: #fdfbf7;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      min-width: 150px;
+      z-index: 10;
+    }
+    .download-options a {
+      display: block;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      color: #000;
+      text-decoration: none;
+    }
+    .download-options a:hover {
+      background: #f5f5f5;
+    }
+    /* Keep dropdown open when focused or hovered */
+    .download-menu:focus-within .download-options,
+    .download-menu:hover .download-options {
+      display: block;
+    }
+    .player {
+      margin: 2rem;
+    }
+    .track {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+    .track-info {
+      flex: 1;
+      margin-right: 1rem;
+    }
+    .track-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+    .track-meta {
+      font-size: 0.7rem;
+      color: #666;
+    }
+    audio {
+      flex: 2;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      height: 32px;
+    }
+    audio::-webkit-media-controls-panel {
+      background: #fff;
+      color: #000;
+    }
+    audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-current-time-display,
+    audio::-webkit-media-controls-time-remaining-display,
+    audio::-webkit-media-controls-timeline,
+    audio::-webkit-media-controls-volume-slider,
+    audio::-webkit-media-controls-mute-button {
+      filter: invert(1) brightness(0) contrast(100);
+    }
+    .press-text {
+      margin: 2rem;
+      font-size: 1.05rem;
+      color: #333;
+      text-align: left;
+    }
+    footer {
+      text-align: center;
+      margin: 3rem 0;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    footer a {
+      color: #888;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-downloads">
+        <div class="download-menu">
+          <button class="download-btn">Download Album ▾</button>
+          <div class="download-options">
+            <a href="chants_mp3.zip" download>MP3 (ZIP)</a>
+            <a href="chants_wav.zip" download>WAV (ZIP)</a>
+            <a href="chants_aiff.zip" download>AIFF (ZIP)</a>
+          </div>
+        </div>
+        <div class="download-menu">
+          <button class="download-btn">Download Press Kit ▾</button>
+          <div class="download-options">
+            <a href="press_images.zip" download>Press Images (ZIP)</a>
+            <a href="cover_art.jpg" download>Album Cover (JPG)</a>
+          </div>
+        </div>
+      </div>
+      <h1>Pauline Hogstrand – <em>Chants</em></h1><br>
+      <p><strong>Out on Nov. 15 2025</strong></p>
+    </header>
+
+    <section class="player">
+      <div class="track">
+        <div class="track-info">
+          <div class="track-title">Gold White / The Bell Tower / Circle Forms</div>
+          <div class="track-meta">Pauline Hogstrand: Chants</div>
+        </div>
+        <audio controls preload="none">
+          <source src="mp3/01_Pauline Hogstrand_Gold White_The_Bell_Tower_Circle_Forms.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="download-menu">
+          <button class="download-btn">Download ▾</button>
+          <div class="download-options">
+            <a href="track1.mp3" download>MP3</a>
+            <a href="track1.wav" download>WAV</a>
+            <a href="track1.aiff" download>AIFF</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="track">
+        <div class="track-info">
+          <div class="track-title">Liminal</div>
+          <div class="track-meta">Pauline Hogstrand: Chants</div>
+        </div>
+        <audio controls preload="none">
+          <source src="mp3/02_Pauline Hogstrand_Liminal.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="download-menu">
+          <button class="download-btn">Download ▾</button>
+          <div class="download-options">
+            <a href="track2.mp3" download>MP3</a>
+            <a href="track2.wav" download>WAV</a>
+            <a href="track2.aiff" download>AIFF</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="track">
+        <div class="track-info">
+          <div class="track-title">For the Heart</div>
+          <div class="track-meta">Pauline Hogstrand: Chants</div>
+        </div>
+        <audio controls preload="none">
+          <source src="mp3/03_Pauline Hogstrand_For_the_heart.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="download-menu">
+          <button class="download-btn">Download ▾</button>
+          <div class="download-options">
+            <a href="track3.mp3" download>MP3</a>
+            <a href="track3.wav" download>WAV</a>
+            <a href="track3.aiff" download>AIFF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="press-text">
+      <p>
+        Chants is the third solo album by Swedish-born, Copenhagen-based violist and composer Pauline Hogstrand. Known for her work across classical, electroacoustic, and improvisational music, Hogstrand here returns to the acoustic ensemble, composing for strings, percussion, and synthesizer in a five-movement suite that unfolds like a meditation—on openness, co-creation, and the quiet clarity that emerges through presence.
+      </p>
+      <p>
+        Following her acclaimed electroacoustic releases The Enterer (2020) and Áhkká (2023), Chants reconnects with Hogstrand’s background in classical performance while carrying forward her signature sensibility: time-stretched structures, subtle shifts, and a deep trust in sound’s capacity to speak without drama or demand. The result is a work that balances refinement and rawness, structure and breath.
+      </p>
+      <p>The composition was conceived during the final months of Hogstrand’s pregnancy and completed shortly after the birth of her twins. “It came out of a longing to receive,” she says, “and as a calling for my heart to open.” That sense of offering and receptivity runs through the music. From the first tone—a single open violin string—the sound begins to unfold. Synth layers rise like mist. Strings move in gliding glissandi, almost imperceptible yet charged with motion. Without warning, the ensemble lifts the listener into air, weightless.
+      </p>
+      <p>Each movement of Chants is its own elemental space. The opening triptych (Gold White / The Bell Tower / Circle Forms) draws on strings and synths alone, slowly layering breath-like gestures until the ground seems to fall away. The second movement introduces percussion—not as drive, but as suspended texture, fragments circling around a consistent synth chord, creating a tension between stillness and change. The third movement, a ritualistic canon weaves melodic lines that echo and shadow one another in quiet dialogue.
+</p>
+<p>The fourth movement (Liminal) pares the ensemble down to strings alone. Here, repetition and imitation create a fragile counterpoint where silences are as charged as the notes themselves. Finally, the closing movement (For the Heart) emerges from sparse gestures into a layered chant of strings, percussion, and synths. Rhythms interlock and dissolve, edging toward chaos before coalescing into a chant-like theme—an ecstatic invocation that is both ending and beginning.
+</p>
+<p>Recorded with Crush String Collective—an ensemble Hogstrand co-founded known for its collaborative, improvisation-informed approach—and percussionists Anders Vestergaard and Victor Dybbroe, Chants embodies her commitment to structures that invite performers not only to interpret, but to shape. The album was recorded at The Village Studio (Copenhagen), mixed and mastered by Adam Donoval, with artwork and layout by Hogstrand herself.
+</p>
+<p>There is a quiet radicality in Chants: a refusal of spectacle, a trust in stillness, and a belief that from layered intensities, deep simplicity can emerge. It is music that doesn’t seek to persuade, but to be with. A sonic space to listen inward, outward—and with others. 
+</p>
+spacer
+
+<p>Pauline Hogstrand is a Swedish-born, Copenhagen-based violist, composer, and sound artist whose work spans classical performance, electroacoustic music, and collective creation. A graduate of the Royal Danish Academy of Music, she has established herself as a distinctive voice in the Nordic experimental scene, performing as a soloist and with ensembles such as Damkapellet and Crush String Collective.
+</p>
+<p>Her music is marked by a trust in sound’s own unfolding—layered intensities, gradual transformations, and an openness that invites both performers and listeners into shared presence. Alongside her solo releases The Enterer (2020), Áhkká (2023), and Chants (2025), Hogstrand collaborates widely across genres, exploring coexistence, improvisation, and collective authorship as artistic principles.
+</p>
+    </section>
+
+    <footer>
+      &copy; 2025 SOLEN · <a href="https://solensolen.org" target="_blank">solensolen.org</a>
+    </footer>
+  </div>
+</body>
+</html>
