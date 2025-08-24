@@ -31,8 +31,8 @@ header {
 @keyframes gradientShift {
   0%   { stop-color: #0A3635; }
   25%  { stop-color: #1600ff; }
-  50%  { stop-color: #ffb905; }
-  75%  { stop-color: #fbc086; }
+  50%  { stop-color: #170050; }
+  75%  { stop-color: #221639; }
   100% { stop-color: #0A3635; }
 }
 
