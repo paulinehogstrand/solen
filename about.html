@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>about</title>
+     <meta name="description" content="Solen is a label founded by Pauline Hogstrand and Anders Vestergaard as a home and shelter for their own artistic practices and as a platform for presenting and archiving music and beyond from their extended community..">
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+     <div id="header"></div>
+    <main>
+       <p>Solen is a label founded by Pauline Hogstrand and Anders Vestergaard as a home and shelter for their own artistic practices and as a platform for presenting and archiving music and beyond from their extended community.
+        </p>
+    </main>
+    <div id="footer"></div>
+
+ <script>
+      // Load header
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        });
+
+      // Load footer
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+</body>
+
+</html>
