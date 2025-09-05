@@ -30,8 +30,8 @@ header {
 /* Animate the gradient's stop colors */
 @keyframes gradientShift {
   0%   { stop-color: #0A3635; }
-  25%  { stop-color: #0c0090; }
-  50%  { stop-color: #170050; }
+  25%  { stop-color: #363545; }
+  50%  { stop-color: #070411; }
   75%  { stop-color: #221639; }
   100% { stop-color: #0A3635; }
 }
@@ -46,6 +46,7 @@ header {
 
 
 html, body {
+  
   height: 100%;
   margin: 0;
   padding: 0;
@@ -55,25 +56,115 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Academico', serif;
 }
 
 main {
   flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 200px;
+justify-content: center;
+  padding-bottom: 100px;
+}
+
+.main-row {
+  display: flex;
+  flex-direction: column;   /* Stack children vertically */
+  align-items: center;  /* Align items to the left */
+  width: 100%;
+  max-width: 600px;    
+}
+.main-image {
+  max-width: 500px;    /* Adjust as needed */
+  height: auto;
+}
+
+.main-row h1 {
+  font-size: 1.2rem; /* Adjust as needed, e.g. 1.2rem, 20px, etc. */
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-weight: bold; /* Optional: keep bold */
+  color: #0a0303b5;
+   letter-spacing: 0.06em;
+}
+.main-row h2 {
+  font-size: 1.0rem; /* Adjust as needed, e.g. 1.2rem, 20px, etc. */
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-weight: normal;
+  color: #000;
+   letter-spacing: 0.06em;
+}
+
+.main-row p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 0px; /* or 0 for no space */
+  letter-spacing: 0.06em;
+}
+
+.p-large {
+  font-size: 1.2rem;
+}
+
+.p-medium {
+  font-size: 1.0rem;
+}
+
+.p-small {
+  font-size: 0.7rem;
+}
+
+.main-row img,
+.main-row .main-image {
+  margin-top: 10px;
+  margin-bottom: 10px; /* or 0 for no space */
+}
+
+.spacer {
+  display: block;
+  width: 100%;
+  height: 32px; /* Default vertical space, adjust as needed */
+}
+
+.spacer.small {
+  height: 16px;
+}
+
+.spacer.large {
+  height: 64px;
 }
 
 footer {
-  text-align: center;
-  padding: 0px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background: #fff;
+  z-index: 100;
 }
 
-footer p {
-  margin: 0;
-  padding: 10px 0;
-  color: #333;
-  font-size: small;
+
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  margin: 5px 0;
+}
+
+.footer-btn {
+  background: transparent;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 0px;
+  font-size: 1.3rem;
+  display: inline-block;
+   letter-spacing: 0.08em;
+}
+
+.footer-btn:hover {
+  background: #000;
+  color: #fff
 }
